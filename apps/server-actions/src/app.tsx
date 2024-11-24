@@ -13,7 +13,7 @@ export default async function HomePage() {
     "use server";
     count++;
     rerender("/");
-    return count;
+    // return count;
   }
 
   return (
