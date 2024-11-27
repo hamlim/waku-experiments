@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
-    "types": ["react/experimental"],
+    "types": ["react/experimental", "@types/bun"],
     "jsx": "react-jsx"
   }
 }

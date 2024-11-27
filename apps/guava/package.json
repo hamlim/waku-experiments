@@ -4,8 +4,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "waku dev",
-    "build": "waku build",
+    "generate": "node lib/guava.mjs",
+    "generate:watch": "node lib/guava.mjs --watch-dir ./src/app",
+    "dev": "bun run generate:watch & waku dev",
+    "build": "bun run generate && waku build",
     "start": "waku start"
   },
   "dependencies": {
